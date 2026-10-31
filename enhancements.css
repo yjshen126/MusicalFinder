@@ -56,3 +56,18 @@
 .tabbar{position:relative;bottom:auto;left:auto;transform:none;width:100%;flex:none}
 @media(min-width:600px){.app{height:calc(100dvh - 48px);min-height:0}.app #main{min-height:0}.tabbar{bottom:auto}}
 .diary-day-posters .poster:only-child{width:70%;max-width:32px}.diary-day-posters .poster:first-child:nth-last-child(2),.diary-day-posters .poster:first-child:nth-last-child(2)~.poster{width:calc((100% - 1px)/2)}
+
+/* Keep the current page title visible while its performance list scrolls. */
+.detail-bar{position:sticky;top:0;z-index:4;background:#fff}
+.session-block{margin-top:22px}
+.session-block-title{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:2px}
+.session-block-title h3{margin:0;font-size:15px;line-height:1.4}
+.session-block-title span{color:#999;font-size:12px}
+.session-block--upcoming .session-block-title h3{color:#e92a45}
+.session-block--past{margin:26px -20px 0;padding:20px 20px 8px;background:#f7f7f7;border-top:7px solid #f0f0f0}
+.session-block--past .session-block-title h3{color:#666}
+.session-block--past .compact-row{background:transparent}
+.compact-row.is-past .poster{filter:grayscale(.85);opacity:.68}
+.compact-row.is-past .row-info strong{color:#666}
+.compact-row.is-past .row-date-line{color:#888}
+.past-tag{display:inline-block;margin-left:5px;padding:2px 6px;border-radius:5px;background:#ededed;color:#888;font-size:10px;font-weight:500;vertical-align:1px}
