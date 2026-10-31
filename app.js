@@ -137,7 +137,7 @@
     if(document.querySelector('.dates')) document.querySelector('.dates').scrollLeft=dateScroll
     if(state.cityOpen) main.insertAdjacentHTML('beforeend',cityModal())
     if(state.castOpen) main.insertAdjacentHTML('beforeend',castModal())
-    if(options.scrollTop) window.scrollTo(0,0)
+    if(options.scrollTop) main.scrollTo(0,0)
   }
   nav.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon))
   function updateResults(){const node=document.querySelector('#results');if(node)node.innerHTML=resultMarkup();const clear=document.querySelector('.clear-search');if(clear)clear.hidden=!(state.searchDraft||state.query)}
